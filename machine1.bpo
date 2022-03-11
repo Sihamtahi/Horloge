@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="25">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="heureo" org.eventb.core.predicate="heure∈0 ‥ 23" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="7">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="23∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="7">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&lt;23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 11⇒0∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈12 ‥ 23⇒23∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="21">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 11∧23=23⇒0∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="23∈12 ‥ 23∧0=11⇒0∈11 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTheureo" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="heuren'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heurej'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heure'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPheureo" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTheureo" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="IncrNuit/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren+1∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrNuit/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren+1&lt;heurej" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrNuit/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒heuren+1∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrNuit/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒heurej∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrNuit/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren+1∈0 ‥ 11∧heurej=23⇒heure+1∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrNuit/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren+1=11⇒heure+1∈11 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrNuit/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure&lt;23" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrNuit\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTheurep" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="heuren'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heure'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPheurep" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTheurep" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="heuren&lt;11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="heurej=23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="0≤heuren" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#,|org.eventb.core.guard#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="IncrJour/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heurej+1∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrJour/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren&lt;heurej+1" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrJour/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒heuren∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrJour/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒heurej+1∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrJour/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej+1=23⇒heure+1∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrJour/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heurej+1∈12 ‥ 23∧heuren=11⇒heure+1∈11 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="IncrJour/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheureq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure&lt;23" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#IncrJour\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTheureq" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="heurej'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heure'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPheureq" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTheureq" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="12≤heurej" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="heuren=11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="heurej&lt;23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#-|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="swicthJour/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="12∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="swicthJour/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren&lt;12" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="swicthJour/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒heuren∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="swicthJour/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒12∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="swicthJour/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heuren∈0 ‥ 11∧12=23⇒heure+1∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="swicthJour/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="12∈12 ‥ 23∧heuren=11⇒heure+1∈11 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="swicthJour/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheurer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure&lt;23" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#+|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#swicthJour\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTheurer" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="heurej'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heure'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPheurer" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTheurer" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="heuren=11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="heurej=23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="switchNuit/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="12∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&lt;12" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 11⇒0∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈12 ‥ 23⇒12∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 11∧12=23⇒0∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="12∈12 ‥ 23∧0=11⇒0∈11 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="switchNuit/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPheures"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="heure=23" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Horloge/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.guard#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#switchNuit\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTheures" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="heuren'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heurej'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="heure'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPheures" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTheures" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="heurej=23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="heuren=11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#6|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Horloge/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="heurej∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="heuren∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="heuren&lt;heurej" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23" org.eventb.core.source="/Horloge/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#;"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

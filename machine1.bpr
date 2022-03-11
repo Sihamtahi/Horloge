@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="23∈12 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/act1/SIM"/>
+    <org.eventb.core.prProof name="Incrementation/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with minute=59" org.eventb.core.prHyps="p3">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p1,p2,p3,p5">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="minute∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="59∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure&lt;23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="minute=59"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Reinitialisation/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with minute=59" org.eventb.core.prHyps="p3">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p1,p2,p3,p5">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="minute∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="59∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure=23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="minute=59"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="incrMin/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p1,p2">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="minute+1∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="minute∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="minute&lt;59"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="incrMin/vrn1/NAT" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p1,p2">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="minute∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="minute&lt;59"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="59 − minute∈ℕ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="incrMin/vrn1/VAR" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p1,p2">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="minute∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="minute&lt;59"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="59 − (minute+1)&lt;59 − minute"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11⇒0∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Incrementation/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p3,p1">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Reinitialisation/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with heure=23" org.eventb.core.prHyps="p3">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p2,p5,p6,p1,p3,p4,p8">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="minute" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="minute∈0 ‥ 59"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure=23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="minute=59"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="23∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈heuren ‥ heurej"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0&lt;23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Incrementation/inv3/INV"/>
+    <org.eventb.core.prProof name="Reinitialisation/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p3,p1">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Incrementation/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p3,p1">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure&lt;23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Reinitialisation/grd1/GRD"/>
+    <org.eventb.core.prProof name="IncrNuit/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p11">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p6,p4,p2,p3,p1,p5,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒heuren+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren&lt;11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2,p6" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p5,p1" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p5,p2,p4,p1,p6,p15">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren&lt;11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊥⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure&lt;23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with heurej=23" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p6,p4,p2,p3,p1,p5,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren+1&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heuren&lt;23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren&lt;11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren+1&lt;23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p3,p1,p5,p2">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heurej≥12"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heurej+1∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej&lt;23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p6,p4,p5,p1,p3,p11,p12">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heurej∈12 ‥ 23⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren∈0 ‥ 11⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heurej≥12"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure&lt;23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p2,p1">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with heuren=11" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p2,p3,p5,p1,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="11∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3,p4" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="(heuren∈0 ‥ 11⇒heure∈0 ‥ 11)∨(heurej∈12 ‥ 23⇒heure∈12 ‥ 23)">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈0 ‥ 11∨heure∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0&lt;12"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="(⊤⇒heure∈0 ‥ 11)∨(⊤⇒heure∈12 ‥ 23)">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11⇒0∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/grd1/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p2,p3,p9,p10">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heurej∈12 ‥ 23⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heuren∈0 ‥ 11⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2,p7" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="p6,p1" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p6,p2,p4,p7,p1,p15,p16">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊤⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure=23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv5/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p2,p1">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈heuren ‥ heurej"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv3/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p2,p1">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p1">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="0∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈12 ‥ 23⇒23∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="23∈12 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p2,p3,p1,p5">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren&lt;11"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p2,p5" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4,p1" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p4,p2,p3,p6,p1,p5,p16">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej&lt;23"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊥⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heurej+1∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="12≤heurej"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p2,p5" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4,p1" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p17">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p7,p4,p2,p3,p6,p1,p5,p16,p17">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒heurej+1∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej&lt;23"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heure+1∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊥⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="heurej+1∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="12≤heurej"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p4,p2,p3,p1">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p10">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p5,p4,p2,p3,p1,p10">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure+1∈12 ‥ 23⇒12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure+1∈12 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p11">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p6,p4,p2,p3,p5,p1,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="0∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈12 ‥ 23⇒12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with heurej=23" org.eventb.core.prHyps="p5">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p4"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p2,p3,p5,p1,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="23∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p2,p5" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4,p1" org.eventb.core.prInfHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with heuren=11" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p17"/>
+                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p7,p4,p2,p3,p6,p1,p5,p16,p17">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="11&lt;heurej"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren&lt;heurej+1"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej&lt;23"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊥⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="12≤heurej"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="11&lt;heurej+1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p4,p5" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with heuren=11" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p8"/>
+                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p7"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren&lt;12"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="(heuren∈0 ‥ 11⇒heure∈0 ‥ 11)∨(heurej∈12 ‥ 23⇒heure∈12 ‥ 23)">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="11&lt;heurej">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈0 ‥ 11∨heure∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren&lt;heurej">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="11&lt;12"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="(⊤⇒heure∈0 ‥ 11)∨(⊤⇒heure∈12 ‥ 23)">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2,p6" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p5,p1" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p5,p2,p4,p1,p6,p15,p16">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure&lt;23"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11∧23=23⇒0∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="23∈12 ‥ 23∧0=11⇒0∈11 ‥ 23"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4,p1" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p7,p12" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p16"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heuren+1∈0 ‥ 11⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heuren+1∈0 ‥ 11∧⊤⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren+1∈0 ‥ 11∧heurej=23⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren&lt;11"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heuren+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊥⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrNuit/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p4,p9" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p1,p12" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p16"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heuren+1=11"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren&lt;11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren+1=11⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧heuren+1=11⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heuren+1=11⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊥⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p1,p9" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p16"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heurej&lt;23"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heurej+1=23⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧⊥⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧heurej+1=23⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heurej+1=23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej+1=23⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="IncrJour/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p4,p10" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p7,p1" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p16"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heurej+1∈12 ‥ 23∧heuren=11⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej&lt;23"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧⊥⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heurej+1∈12 ‥ 23⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heurej+1∈12 ‥ 23∧⊤⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heurej+1∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p1,p9" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧12=23⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤⇒heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heurej=23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="heure∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="heuren∈0 ‥ 11∧12=23⇒heure+1∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="swicthJour/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p10"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p2,p6" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p5,p1" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p19">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p7,p5,p2,p4,p1,p6,p16,p17,p19">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="12∈12 ‥ 23∧⊤⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heuren&lt;heurej"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heurej∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej=23"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="12∈12 ‥ 23∧heuren=11⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heure∈0 ‥ 23"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="12∈12 ‥ 23"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heuren=11"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="12∈12 ‥ 23⇒heure+1∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="heure∈11 ‥ 23"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="heure∈0 ‥ 11"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p3,p9" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤⇒heure∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heurej=23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren=11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈0 ‥ 11∧12=23⇒0∈0 ‥ 11"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="switchNuit/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p3,p9" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p6,p12" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="heure∈12 ‥ 23⇒heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧⊤⇒heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="heuren∈0 ‥ 11∧heurej=23⇒heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="heurej∈12 ‥ 23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤⇒heure∈11 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="heurej=23">
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="heurej∈12 ‥ 23∧heuren=11⇒heure∈11 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heurej" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="heuren=11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="heure∈11 ‥ 23">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="heure∈0 ‥ 11⇒heuren∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="heuren" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="heure∈12 ‥ 23⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="heure∈0 ‥ 11⇒⊤">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="heure∈0 ‥ 11">
+            <org.eventb.core.prIdent name="heure" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="12∈12 ‥ 23∧0=11⇒0∈11 ‥ 23"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

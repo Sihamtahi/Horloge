@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+    <org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="21" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrNuit/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="IncrJour/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="swicthJour/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="switchNuit/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

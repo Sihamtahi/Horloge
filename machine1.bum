@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="heurej ≔ 23 " org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="heuren ≔ 0" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.refinesMachine name="(" org.eventb.core.target="machine0"/>
+    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="IncrNuit">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="heuren &lt; 11 "/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heuren ≔ heuren +1 " org.eventb.core.label="act1"/>
+        <org.eventb.core.refinesEvent name="+" org.eventb.core.target="Incrementation"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate=" heurej=23"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="0 ≤ heuren "/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="IncrJour">
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="12 ≤ heurej"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heurej ≔ heurej +1" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="heuren = 11"/>
+        <org.eventb.core.refinesEvent name="+" org.eventb.core.target="Incrementation"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="heurej&lt;  23"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="heurej"/>
+    <org.eventb.core.variable name="1" org.eventb.core.identifier="heuren"/>
+    <org.eventb.core.invariant name="2" org.eventb.core.comment="heure ∈ heuren ‥ heurej " org.eventb.core.label="inv1" org.eventb.core.predicate="heurej ∈ 12 ‥ 23"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="inv2" org.eventb.core.predicate="heuren ∈ 0 ‥ 11"/>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="swicthJour">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="heuren = 11"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="heurej≔ 12" org.eventb.core.label="act1"/>
+        <org.eventb.core.refinesEvent name=")" org.eventb.core.target="Incrementation"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="heurej=23"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="switchNuit">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="heurej = 23"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="heuren ≔ 0" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="heuren = 11"/>
+        <org.eventb.core.refinesEvent name="+" org.eventb.core.target="Reinitialisation"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="heurej ≔12" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="7" org.eventb.core.label="inv3" org.eventb.core.predicate="heuren&lt; heurej"/>
+    <org.eventb.core.invariant name="8" org.eventb.core.comment="invariant de collage" org.eventb.core.label="inv4" org.eventb.core.predicate="( heure ∈ 0‥11 ⇒ heuren ∈ 0‥11   ) "/>
+    <org.eventb.core.invariant name="9" org.eventb.core.comment="invariant de collage" org.eventb.core.label="inv5" org.eventb.core.predicate=" (heure ∈ 12‥23 ⇒  heurej ∈ 12‥23 )"/>
+    <org.eventb.core.invariant name=":" org.eventb.core.label="inv6" org.eventb.core.predicate="(heuren ∈ 0‥11  ∧ heurej=23) ⇒ heure ∈ 0‥11 "/>
+    <org.eventb.core.invariant name=";" org.eventb.core.label="inv7" org.eventb.core.predicate="( heurej ∈ 12‥23 ∧ heuren =11) ⇒ heure ∈ 11‥23"/>
+</org.eventb.core.machineFile>
